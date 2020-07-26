@@ -51,7 +51,6 @@ let n = 0;
 
 function step() {
   setTimeout(() => {
-    n += 1;
     if (str[n] === "\n") {
       str2 += "<br>";
     } else if (str[n] === " ") {
@@ -64,6 +63,7 @@ function step() {
     window.scrollTo(0, 99999);
     test.scrollTo(0, 99999);
     if (n < str.length - 1) {
+      n += 1;
       step();
     }
   }, 50);
