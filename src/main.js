@@ -66,7 +66,7 @@ function step() {
     if (n < str.length - 1) {
       step();
     }
-  }, 0);
+  }, 50);
 }
 
 step();
